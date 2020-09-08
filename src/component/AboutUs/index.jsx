@@ -1,0 +1,63 @@
+import React from "react";
+import { Container, Row, Col, Image } from "react-bootstrap";
+import "./styles.scss";
+
+export default function AboutUs(props) {
+  return (
+    <div id="about-us" className="pb-4">
+      <div className="heading">
+        <h1>
+          About <span>Us</span>
+        </h1>
+      </div>
+      <Container className="mx-auto" style={{ width: "92vw" }}>
+        <Row sm={1} xs={1} lg={2} md={2} className="about">
+          <Col className="d-flex justify-content-center align-items-center">
+            <p>
+              We are a set of entrepreneurs who have put in years towards
+              creating expertise in
+              <strong>
+                {" 3PL services, Warehousing, and Fulfillment Strategies"}
+              </strong>
+              . We at, modern godaam, help you upscale and expand your business
+              and sales by giving the best possible solution for your business
+              for the e-commerce marketplace
+            </p>
+          </Col>
+          <Col className="d-flex justify-content-center align-items-center">
+            <Image
+              className="w-50 h-75"
+              src={require("../../assets/images/about-1.png")}
+            />
+          </Col>
+        </Row>
+        <Row sm={1} xs={1} lg={2} md={2} className="about">
+          <Col className="d-flex justify-content-center align-items-center">
+            <div>
+              <h3>
+                Why <strong>3PL Services</strong> is the Need of the Hour?
+              </h3>
+              <Image
+                className="w-100"
+                src={require("../../assets/images/about-2.png")}
+              />
+            </div>
+          </Col>
+          <Col className="d-flex justify-content-center align-items-center">
+            <p>
+              Modern godaam provides <strong>3PL Fulfillment Solutions</strong>{" "}
+              to fit each customer’s individual needs. We understand that each
+              business’s needs differ significantly. It is our goal to make sure
+              we meet each of our client’s specific needs in the most seamless
+              way possible. We guide you through fulfillment – with trail guides
+              that meet you face-to-face, communicating with you every step of
+              the way. At modern godaam, we still believe in people talking to
+              people – and never forgetting the human element in every
+              interaction.
+            </p>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
+}

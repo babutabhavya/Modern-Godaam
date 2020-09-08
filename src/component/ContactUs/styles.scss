@@ -1,0 +1,24 @@
+#contact-us {
+  background-color: #f8f9fa;
+  padding-bottom: 3rem;
+  background-image: url("../../assets/images/contact-2.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 90% 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+    width: 100vw;
+  }
+  .contact-info {
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .contact-container {
+    margin: auto;
+  }
+  .contact-form {
+  }
+}
