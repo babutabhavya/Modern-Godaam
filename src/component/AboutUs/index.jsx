@@ -4,16 +4,16 @@ import "./styles.scss";
 
 export default function AboutUs(props) {
   return (
-    <div id="about-us" className="pb-4">
+    <div id="about-us">
       <div className="heading">
         <h1>
           About <span>Us</span>
         </h1>
       </div>
-      <Container className="mx-auto" style={{ width: "92vw" }}>
+      <Container className="mx-auto">
         <Row sm={1} xs={1} lg={2} md={2} className="about">
           <Col className="d-flex justify-content-center align-items-center">
-            <p>
+            <p className="justify-text-center">
               We are a set of entrepreneurs who have put in years towards
               creating expertise in
               <strong>
@@ -24,28 +24,28 @@ export default function AboutUs(props) {
               for the e-commerce marketplace
             </p>
           </Col>
-          <Col className="d-flex justify-content-center align-items-center">
+          <div>
             <Image
-              className="w-50 h-75"
+              className="w-100"
               src={require("../../assets/images/about-1.png")}
             />
-          </Col>
+          </div>
         </Row>
         <Row sm={1} xs={1} lg={2} md={2} className="about">
-          <Col className="d-flex justify-content-center align-items-center">
-            <div>
-              <h3>
-                Why <strong>3PL Services</strong> is the Need of the Hour?
-              </h3>
+          <div>
+            <h3 className="w-75 text-center">
+              Why <strong>3PL Services</strong> is the Need of the Hour?
+            </h3>
+            <div className="d-flex justify-content-center w-100">
               <Image
-                className="w-100"
                 src={require("../../assets/images/about-2.png")}
+                className="w-100 h-100"
               />
             </div>
-          </Col>
+          </div>
           <Col className="d-flex justify-content-center align-items-center">
-            <p>
-              Modern godaam provides <strong>3PL Fulfillment Solutions</strong>{" "}
+            <p className="justify-text-center">
+              Modern godaam provides <strong>3PL Fulfillment Solutions</strong>
               to fit each customer’s individual needs. We understand that each
               business’s needs differ significantly. It is our goal to make sure
               we meet each of our client’s specific needs in the most seamless

@@ -1,26 +1,26 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import "./styles.scss";
 
 export default function Services(props) {
   const { isMobile } = props;
   return (
-    <div className="text-center gray-container services pb-5">
+    <div className="text-center grey-container services">
       <div className="heading">
         <h1>
           Our <span>Services</span>
         </h1>
       </div>
-
-      <Fade effect="top">
-        <h2 style={{ width: "90vw" }} className="mx-auto justify-text-center">
-          Whether your business is large or small, Modern Godaam is the perfect
-          solution for your product storage and transportation needs.
-        </h2>
-      </Fade>
       <Container>
-        <Row className={`mx-auto mt-3 ${isMobile ? " d-block" : ""}`}>
+        <Row className={`mx-auto ${isMobile ? " d-block" : ""}`}>
+          <Fade effect="top">
+            <h2 className="mx-auto justify-text-center mb-3">
+              Whether your business is large or small, Modern Godaam is the
+              perfect solution for your product storage and transportation
+              needs.
+            </h2>
+          </Fade>
           <Col>
             <h3>Packaging</h3>
             <p className="justify-text-center">

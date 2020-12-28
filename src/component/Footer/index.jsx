@@ -1,62 +1,58 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { ICONS } from "../../constants/icons";
 import { Link } from "react-scroll";
-import SocialMediaButtons from "../SocialMediaButtons/index";
 import "./styles.scss";
 
 export default function Footer(props) {
-  const { isMobile } = props;
+  const { isMobile, title, description } = props;
   return (
-    <div className="text-center footer-container text-left">
+    <div className="footer-container">
       <Container className={isMobile ? "d-block" : "d-flex"}>
         <Col className="footer-col">
-          <Row className="footer-title ">Modern Godaam</Row>
-          <Row>
-            <p>Some Content</p>
-          </Row>
+          <Row className="footer-title ">{title}</Row>
+          <Row>{description}</Row>
         </Col>
         <Col className="footer-col">
-          <Row className="footer-title">Useful Links</Row>
-          <Row className="footer-sub footer-links">
-            <Link to="about-us" smooth={true} offset={-10}>
-              About Us
+          <Row className="footer-title">USEFUL LINKS</Row>
+          <div className="useful-links">
+            <Link to="___gatsby" smooth={true} offset={-100}>
+              HOME
             </Link>
-          </Row>
-          <Row className="footer-sub footer-links">
-            <Link to="contact-us" smooth={true} offset={-10}>
-              Contact Us
+            <Link to="services" smooth={true} offset={-100}>
+              SERVICES
             </Link>
-          </Row>
+            <Link to="about-us" smooth={true} offset={-100}>
+              ABOUT US
+            </Link>
+            <Link to="contact-us" smooth={true} offset={-100}>
+              CONTACT US
+            </Link>
+          </div>
         </Col>
-        <Col className="footer-col text-left">
-          <Row className="footer-title">Get In Touch</Row>
-          <Row className="d-block">
-            <h5 className="footer-sub">Address</h5>
-            <div className="d-flex">
-              <p className="footer-desc">
-                Khasra no 205-206, Govind Mohalla, Haiderpur, Delhi - 110088
-              </p>
+        <Col className="footer-col">
+          <Row className="footer-title">GET IN TOUCH</Row>
+          <div className="d-flex">
+            <ICONS.WAREHOUSE size={30} color="white" />
+            <div className="footer-desc ml-3">
+              Khasra no 205-206, Govind Mohalla, Haiderpur,
+              <br /> Delhi - 110088
             </div>
-          </Row>
-          <Row className="d-block">
-            <h5 className="footer-sub">Phone Number</h5>
-            <div className="d-flex">
+          </div>
+          <div className="d-flex mt-3">
+            <ICONS.PHONE size={30} color="white" />
+            <div className="ml-3">
               <a href="tel:+919953204151">+919953204151</a>
-            </div>
-            <div className="d-flex">
+              <br />
               <a href="tel:+919711817208">+919711817208</a>
             </div>
-          </Row>
-          <Row className="d-block">
-            <h5 className="footer-sub">Email</h5>
-            <div className="d-flex">
+          </div>
+          <div className="d-flex mt-3">
+            <ICONS.MAIL size={35} color="white" />
+            <div className="ml-3">
               <a href="mailto:info@moderngodaam.com">info@moderngodaam.com</a>
             </div>
-          </Row>
-        </Col>
-        <Col className="footer-col">
-          <Row className="footer-title">Social Media</Row>
-          <SocialMediaButtons isMobile={isMobile} />
+          </div>
         </Col>
       </Container>
     </div>

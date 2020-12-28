@@ -5,19 +5,13 @@ import "./styles.scss";
 export default function FulfillmentServices(props) {
   const { isMobile } = props;
   return (
-    <div id="fulfillment-services">
+    <div id="fulfillment">
       <div className="heading">
         <h1>
           Fulfillment <span>Services</span>
         </h1>
       </div>
-      <Container className="mx-auto" style={{ width: "92vw" }}>
-        <Row className="justify-content-center">
-          <Image
-            src={require("../../assets/images/fulfillment-4.png")}
-            className="w-100"
-          />
-        </Row>
+      <Container className="mx-auto">
         <Row>
           <h2 className="justify-text-center">
             Fullfillment services for India’s leading players, e-commerce
@@ -25,8 +19,14 @@ export default function FulfillmentServices(props) {
             business grow.
           </h2>
         </Row>
+        <Row className="justify-content-center w-100">
+          <Image
+            src={require("../../assets/images/fulfillment-4.png")}
+            className="w-100 h-100"
+          />
+        </Row>
       </Container>
-      <Container className="mt-5 mx-auto" style={{ width: "92vw" }}>
+      <Container className="mt-2 mx-auto">
         <Row sm={1} xs={1} lg={2} md={2}>
           <Col className="d-flex align-items-center">
             <div>
@@ -44,7 +44,7 @@ export default function FulfillmentServices(props) {
             <Image src={require("../../assets/images/fulfillment-1.png")} />
           </Col>
         </Row>
-        <Row className="mt-1" sm={1} xs={1} lg={2} md={2}>
+        <Row className="mt-5" sm={1} xs={1} lg={2} md={2}>
           {isMobile ? (
             <>
               <Col className="d-flex align-items-center">
@@ -81,7 +81,7 @@ export default function FulfillmentServices(props) {
             </>
           )}
         </Row>
-        <Row className="mt-1" sm={1} xs={1} lg={2} md={2}>
+        <Row className="mt-5" sm={1} xs={1} lg={2} md={2}>
           <Col className="d-flex align-items-center">
             <div>
               <h3>E-Commerce Fulfillment</h3>

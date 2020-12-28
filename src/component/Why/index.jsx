@@ -1,18 +1,18 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import "./styles.scss";
 
 export default function Why(props) {
-  const { isMobile } = props;
+  const { isMobile, title } = props;
   return (
-    <div className="gray-container why">
+    <div className="grey-container why">
       <div className="heading">
         <h1>
-          Why <span>Modern Godaam?</span>
+          Why <span>{title}?</span>
         </h1>
       </div>
-      <Container style={{ width: "95vw" }}>
+      <Container>
         <Row>
           <Col className="d-flex justify-content-center">
             <Fade effect="top">

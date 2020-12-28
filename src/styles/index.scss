@@ -1,0 +1,112 @@
+@import "~bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: "FutuMd";
+  src: local("FutuMd"), url("../assets/fonts/FutuMd.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "FutuMd" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h4 {
+  color: #283891;
+}
+
+.App {
+  text-align: left;
+}
+
+.heading {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  span {
+    color: #283891;
+  }
+}
+
+.form-control {
+  border-radius: 2rem;
+}
+
+label {
+  color: #283891;
+  font-weight: 900;
+}
+
+h3 {
+  margin: auto;
+  padding-bottom: 0.5vw;
+  color: #283891;
+  border-bottom: 4px solid #283891;
+  margin-bottom: 0.5vw;
+  margin-top: 0.5vw;
+}
+
+.justify-text-center {
+  text-align: justify;
+  text-justify: distribute;
+  text-align-last: center;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 4vw;
+    line-height: 7.5vw;
+  }
+  h2 {
+    font-size: 4.5vw;
+  }
+  h1 {
+    font-size: 7vw;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 5vw !important;
+  }
+  .grey-container {
+    background-color: #e5e5e5;
+    padding-bottom: 1rem;
+  }
+  .heading {
+    padding-top: 8vw;
+    padding-bottom: 0.5vw;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  p {
+    font-size: 1.1vw;
+    line-height: 2.25vw;
+  }
+  h2 {
+    font-size: 1.25vw;
+  }
+  h1 {
+    font-size: 2.5vw;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 1.2vw !important;
+    width: max-content;
+  }
+  .grey-container {
+    background-color: #e5e5e5;
+    padding-bottom: 3rem;
+  }
+  .heading {
+    padding-top: 3vw;
+    padding-bottom: 1.5vw;
+  }
+}

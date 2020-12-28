@@ -3,16 +3,12 @@
 }
 
 .carousel-caption {
-  top: 12.5vw;
-  .banner-content {
-    width: 39.5vw;
-  }
   h4 {
     color: black;
   }
   h1,
   h2 {
-    color: #393191;
+    color: #283891;
     letter-spacing: 0.1vw;
     text-transform: uppercase;
   }
@@ -26,25 +22,35 @@
 
 @media screen and (max-width: 600px) {
   .carousel-caption {
+    top: 85vw;
     h2 {
-      font-size: 3vw;
+      font-size: 4.25vw;
+    }
+    h4 {
+      line-height: 5vw;
+      font-size: 4.12vw;
     }
   }
-  h4 {
-    line-height: 1rem;
-    font-size: 3vw;
-  }
+
   .carousel-home {
     padding-top: 13vw;
+    height: 157.5vw;
+    .carousel-inner {
+      height: 100%;
+    }
   }
   .image-banner {
-    width: 65vw;
-    height: 77vw;
+    width: 100%;
+    height: 100%;
   }
 }
 
 @media screen and (min-width: 601px) {
+  .banner-content {
+    width: 39.5vw;
+  }
   .carousel-caption {
+    top: 12.5vw;
     h1 {
       font-size: 4vw;
     }
@@ -53,7 +59,7 @@
     }
   }
   h4 {
-    line-height: 3rem;
+    line-height: 2.5rem;
     font-size: 1.5vw;
   }
   .carousel-home {
@@ -66,5 +72,5 @@
 }
 
 .sep-1 {
-  border: 3px solid #393191;
+  border: 3px solid #283891;
 }

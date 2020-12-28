@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 600px) {
   .btn {
-    padding: 1vw 2.5vw;
+    padding: 3vw 3vw;
     font-size: 4vw;
   }
 }
@@ -38,10 +38,10 @@
   // background-color: rgb(238, 225, 48) !important;
 }
 .effect01:hover {
-  border: 5px solid #393191;
+  border: 5px solid #283891;
   background-color: #fff;
-  box-shadow: 0px 0px 0px 2px #393191 inset;
-  color: #393191;
+  box-shadow: 0px 0px 0px 2px #283891 inset;
+  color: #283891;
 }
 
 /*btn_text*/
@@ -51,13 +51,13 @@
 }
 .effect01:hover span {
   letter-spacing: 0.13em;
-  color: #393191;
+  color: #283891;
 }
 
 /*highlight*/
 .effect01:after {
-  background: #393191;
-  border: 0px solid #393191;
+  background: #283891;
+  border: 0px solid #283891;
   content: "";
   height: 155px;
   left: -75px;

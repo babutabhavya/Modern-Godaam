@@ -1,24 +1,36 @@
 #contact-us {
   background-color: #f8f9fa;
-  padding-bottom: 3rem;
-  background-image: url("../../assets/images/contact-2.png");
-  background-repeat: no-repeat;
-  background-position: left;
   background-size: 90% 100%;
+}
+
+.contact-info {
+  a {
+    color: black;
+  }
+  a:hover {
+    color: #283891;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .contact-form {
     width: 100vw;
   }
+  #contact-us {
+    padding-bottom: 1rem;
+  }
   .contact-info {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
   }
 }
 
 @media screen and (min-width: 601px) {
   .contact-container {
     margin: auto;
+    padding: 3vw 5vw 0vw 5vw;
   }
-  .contact-form {
+  #contact-us {
+    padding-bottom: 3rem;
   }
 }

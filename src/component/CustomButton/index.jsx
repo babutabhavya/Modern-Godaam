@@ -4,8 +4,8 @@ import "./styles.scss";
 export default function CustomButton(props) {
   const { buttonText, handleSubmit } = props;
   return (
-    <div class="button-container" onClick={handleSubmit}>
-      <div class="btn effect01">{buttonText}</div>
+    <div className="button-container" onClick={handleSubmit}>
+      <div className="btn effect01">{buttonText}</div>
     </div>
   );
 }

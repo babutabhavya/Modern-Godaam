@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: #393191;
+  background-color: #283891;
   padding-top: 0.1rem;
   padding-bottom: 2rem;
 }
@@ -13,31 +13,26 @@
     padding-bottom: 1rem;
     margin-bottom: 1rem;
   }
-  .footer-desc {
+  div,
+  a {
     color: white;
   }
-  .footer-sub {
-    color: white;
-    font-size: 1.3rem;
-  }
-  .footer-links {
-    padding-bottom: 1rem;
-  }
-  .footer-links:hover {
-    cursor: pointer;
-    color: white;
+  a:hover {
     text-decoration: underline;
+    cursor: pointer;
   }
 }
 
-.facebook-icon {
-  color: #3b5998;
+.useful-links {
+  display: grid;
+  a {
+    padding-bottom: 1vw;
+    font-size: 1.1vw;
+  }
 }
 
-.insta-icon {
-  color: palevioletred;
-}
-
-.twitter-icon {
-  color: #00aced;
+@media screen and (max-width: 600px) {
+  .useful-links > a {
+    font-size: 3.25vw;
+  }
 }

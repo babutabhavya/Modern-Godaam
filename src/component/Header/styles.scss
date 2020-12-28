@@ -1,28 +1,41 @@
 .header {
   z-index: 100;
   padding: 0 !important;
+  width: 100vw;
 }
 
 .header-logo {
-  background-color: white;
-  margin-left: 5rem;
-  margin-right: 0;
-  z-index: 1000;
-  width: 10vw;
+  background-color: none;
   img {
     width: 10vw;
   }
 }
 
 .header-nav {
-  background-color: #393191;
+  background-color: #283891;
   .navbar-nav {
     padding-left: 5vw;
+    width: 65vw;
+    align-items: center;
+    justify-content: space-evenly;
     a {
-      padding: 2vw 4vw 2vw 4vw;
       color: white;
       letter-spacing: 0.1vw;
       transition: 400ms;
+    }
+    .dropdown-menu {
+      padding: 0;
+      a {
+        padding: 1vw 2vw 1vw 2vw;
+        color: white;
+        transition: 400ms;
+      }
+      .dropdown-item:hover {
+        background-color: #283891;
+        a {
+          color: white !important;
+        }
+      }
     }
   }
 }
@@ -51,24 +64,30 @@
   color: white !important;
 }
 @media screen and (max-width: 600px) {
+  .header {
+    background-color: blueviolet;
+  }
+  .header-nav {
+    .navbar-nav {
+      a {
+        padding: 2vw 4vw 5vw 4vw;
+      }
+    }
+  }
   .header-logo {
     margin-left: 2rem;
-    background: none;
 
     img {
       width: 25vw;
     }
   }
 }
-.header-logo {
-  margin-right: 0;
-  z-index: 1000;
-}
 
 @media screen and (min-width: 601px) {
   .header {
     height: 6vw;
   }
+
   .header-logo {
     background-color: white;
     margin-left: 5rem;
